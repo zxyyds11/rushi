@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>如是</title>
+    <style>
+      body {
+        background-image: url("./如是_files/13.PNG");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 106%;
+        margin: 0px;
+      }
+
+      .video-pin {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: repeat(10, auto);
+      }
+      .video-position {
+        background-color: rgba(222, 222, 222, 0.5);
+        text-align: left;
+        padding: 5px 5px 15px 0px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+
+      /*滚动条*/
+      .scroll-container {
+        width: 1910px;
+        height: 460px;
+        overflow-y: auto;
+        overflow-x: auto;
+      }
+      /* 文字竖向排版，从右到左 */
+      .vertical-text {
+        writing-mode: vertical-rl;
+      }
+      /* 在视口宽度小于等于 768px  */
+      @media (max-width: 768px) {
+        .container-grid {
+          width: 90%;
+          margin: 20px auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1vw;
+          grid-auto-rows: minmax(200px, auto);
+        }
+        .taitou {
+          display: none;
+        }
+        .background {
+          background-size: cover;
+        }
+      }
+      /* 在视口宽度大于等于 768px，小于等于1024px  */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .container-flex {
+          display: flex;
+          width: 100%;
+          padding: 10px;
+          gap: 2vw;
+        }
+        .card {
+          display: none;
+        }
+        .card1 {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="background">
+    <div
+      style="display: flex; background-color: rgba(255, 235, 205, 0.8)"
+      class="container-flex"
+    >
+      <!-- 左区-经题 -->
+      <div style="width: 800px; height: 163px; display: flex" class="card1">
+        <div
+          style="
+            font-size: 16px;
+            line-height: 1.8;
+            /* border: 1px solid black; */
+            flex: 1;
+            color: rgb(143, 141, 141);
+          "
+          class="vertical-text"
+        >
+          顶礼本师释迦牟尼佛<br />
+          顶礼金刚会上诸菩萨<br />
+          顶礼译师鸠摩罗什法师<br />
+          把讲经听法功德回向给法界一切有情
+        </div>
+        <div
+          style="
+            font-size: 23px;
+            color: rgb(143, 141, 141);
+            text-align: center;
+            line-height: 2;
+            /* border: 1px solid black; */
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+          "
+          class="vertical-text card"
+        >
+          【开经偈】<br />
+          無上甚深微妙法 百千萬劫難遭遇 我今見聞得受持 愿解如來真實義
+        </div>
+      </div>
+      <!-- 右区-头像 -->
+      <div
+        style="
+          text-align: left;
+          line-height: 0.5;
+          flex: 1;
+          /* border: 1px solid black; */
+        "
+        class="taitou card"
+      >
+        <img
+          src="./如是_files/7.png"
+          alt="装饰头像"
+          width="133"
+          height="133"
+          style="margin: 5px 69px"
+        />
+        <p style="font-size: 20px; margin-bottom: 10px; margin-top: 8px">
+          【如是我闻】应无所住而生其心
+        </p>
+      </div>
+    </div>
+
+    <div style="padding: 10px; padding-left: 0px">
+      <p
+        style="
+          word-spacing: 20px;
+          font-size: 22px;
+          background-color: rgb(255, 145, 0);
+          display: inline;
+        "
+      >
+        金刚经讲义 --杨宁
+      </p>
+    </div>
+    <!-- 内容区 -->
+    <div
+      style="margin-bottom: 130px"
+      class="container-grid video-pin scroll-container"
+    >
+      <!-- 经题-第二品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          经题
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1002 《金刚经》讲义 经题 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第一品：法会因由分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1003 《金刚经》讲义 第一品：法会因由分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第二品：善现启请分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1004 《金刚经》讲义 第二品：善现启请分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第三品-第五品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第三品：大乘正宗分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1005 《金刚经》讲义 第三品：大乘正宗分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第四品：妙行无住分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1006 《金刚经》讲义 第四品：妙行无住分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第五品：如理实见分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1007 《金刚经》讲义 第五品：如理实见分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第六品-第八品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第六品：正信希有分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1008 《金刚经》讲义 第六品：正信希有分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第七品：无得无说分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1009 《金刚经》讲义 第七品：无得无说分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第八品：依法出生分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1010 《金刚经》讲义 第八品：依法出生分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第九品-第十二品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第九品：一相无相分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1011 《金刚经》讲义 第九品：一相无相分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十品：庄严净土分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1012 《金刚经》讲义 第十品：庄严净土分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十一品：无为福胜分、第十二品：尊重正教分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1013 《金刚经》讲义 第十一品：无为福胜分、第十二品：尊重正教分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第十三品-第十七品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十三品：如法受持分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1014 《金刚经》讲义 第十三品：如法受持分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十四品：离相寂灭分、第十五品：持经功德分、第十六品：能净业障分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1015 《金刚经》讲义 第十四品：离相寂灭分、第十五品：持经功德分、第十六品：能净业障分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十七品：究竟无我分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1016 《金刚经》讲义 第十七品：究竟无我分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第十八品-第二十品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十八品：一体同观分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1017 《金刚经》讲义 第十八品：一体同观分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第十九品：法界通化分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1018 《金刚经》讲义 第十九品：法界通化分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第二十品：离色离相分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1019 《金刚经》讲义 第二十品：离色离相分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第二十一品-第二十四品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿一品：非说所说分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1020 《金刚经》讲义 第廿一品：非说所说分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿二品：无法可得分、第廿三品：净心行善分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1021 《金刚经》讲义 第廿二品：无法可得分、第廿三品：净心行善分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿四品：福智无比分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1022 《金刚经》讲义 第廿四品：福智无比分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第二十五品-第二十八品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿五品：化无所化分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1023 《金刚经》讲义 第廿五品：化无所化分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿六品：法身非相分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1024 《金刚经》讲义 第廿六品：法身非相分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿七品：无断无灭分、第廿八品：不受不贪分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1025 《金刚经》讲义 第廿七品：无断无灭分、第廿八品：不受不贪分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第二十九品-第三十一品 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第廿九品：威仪寂静分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1026 《金刚经》讲义 第廿九品：威仪寂静分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第三十品：一合相理分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1027 《金刚经》讲义 第三十品：一合相理分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第卅一品：知见不生分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1028 《金刚经》讲义 第卅一品：知见不生分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- 第三十二品 尾声 -->
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          第卅二品：应化非真分
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1029 《金刚经》讲义 第卅二品：应化非真分 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-position">
+        <p
+          style="
+            background-color: rgb(255, 145, 0);
+            display: inline;
+            padding: 5px;
+          "
+        >
+          尾声
+        </p>
+        <video
+          controls
+          width="300"
+          style="display: block; margin: 5px; margin-left: 0px"
+        >
+          <source
+            src="D:/金刚经/F1031 《金刚经》讲义 尾声 1080.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+    <a href="./更多品.html"><p>【更多】...✈</p></a>
+    <div style="text-align: center; font-size: 14px">
+      <p>版权声明：视频资料来源于易度门网站，仅供学习使用。</p>
+      <p>备案号</p>
+    </div>
+  </body>
+</html>
